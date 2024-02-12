@@ -6,7 +6,6 @@
   justify-content: space-between;
 
   position: fixed;
-  margin-left: 35px;
   top: 0;
   left: 0;
   right: 0;
@@ -39,7 +38,12 @@
 
 .netflix-logo {
   height: 30px;
+  margin-left: 35px;
   margin-right: 35px;
+}
+
+.netflix-logo:hover {
+  cursor: pointer;
 }
 
 .right-section {
@@ -81,16 +85,16 @@
   border-radius: 16px;
 }
 
-.current-user-picture:hover {
-  cursor: pointer;
-}
-
 .user-info-menu {
   height: 40px;
   background-color: black;
   border: none;
 }
 
+.notifications-icon,
+.genre-container,
+.search-button,
+.current-user-picture,
 .user-info-menu:hover {
   cursor: pointer;
 }

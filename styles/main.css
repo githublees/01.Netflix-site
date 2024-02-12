@@ -1,3 +1,115 @@
-* {
-  background-color: black;
+.main-container {
+  display: flex;
+
+  align-items: center;
+  height: 500px;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  background-image: url("../assets/images/squidgame.jpg");
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+}
+
+.main-contents {
+  margin-left: 30px;
+}
+
+.main-title {
+  font-size: 40px;
+}
+
+.main-info-description {
+  font-size: 15px;
+  color: gray;
+}
+
+.main-description {
+  font-size: 18px;
+
+  margin-bottom: 30px;
+}
+
+.main-button {
+  display: flex;
+}
+
+.main-play-button {
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+
+  width: 100px;
+  height: 35px;
+
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.main-info-button {
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  font-weight: bold;
+
+  width: 100px;
+  height: 35px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+
+  color: white;
+
+  border: none;
+  border-radius: 5px;
+}
+
+.main-play-button,
+.main-info-button:hover {
+  cursor: pointer;
+}
+
+.video-item-list {
+  display: grid;
+
+  grid-template-columns: repeat(6, 350px);
+  grid-template-rows: 55px 1fr;
+
+  column-gap: 10px;
+}
+
+.video-info {
+  grid-column: 1 / 7;
+}
+
+.video-text {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+.thumbnail-row {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.thumbnail {
+  width: 100%;
+  transition-duration: 0.5s;
+  transform: scale(1);
+}
+
+.thumbnail:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
