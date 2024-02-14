@@ -36,6 +36,11 @@
   white-space: nowrap;
 }
 
+.left-section-menu-list,
+.left-section-menu-link:hover {
+  color: gray;
+}
+
 .netflix-logo {
   height: 30px;
   margin-left: 35px;
